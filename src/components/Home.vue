@@ -1,0 +1,563 @@
+<template>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <main class="home-main-container">
+
+        <!-- * Section for hero -->
+        <section class="hero-content">
+        
+            <img class="img-backgrd" src="../assets/img-home/back-hero.png" alt="Fondo obscuro del hero">
+            <img class="img-subject" src="../assets/img-home/sujeto-gym.png" alt="Sujeto resaltado">
+
+            <div class="text-bttn-hero">
+                <p class="txt-subtitl-top">Your Fitness Journey Starts Here</p>
+                <h1 class="txt-titl-welcomn">WELCOME TO TIME FIT PROJECT</h1>
+                <p class="txt-parghp-bottom">Manage your gym efficiently and offer an unparalleled experience to your users.</p>
+
+                <!-- Button redirection to section cards video -->
+                <a href="#strt-page-read">
+                    <button class="bttn-exp-more" type="button">Explore more
+                        <i class="arrow-boton fa-solid fa-arrow-right"></i>
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <!-- * Section for "What we offer cards" and "Efficiency and Personalization at Your Fingertips" 
+         -->
+
+        <div class="cards_video_content" id="strt-page-read">
+
+            <header class="title-cards">
+                <h1>What we offer?</h1>
+            </header>
+            
+            <!-- ** HTML for section for cards -->
+            <section class="cards-we-offer">
+            <div class="cards-content">
+            <!-- Target 1 -->
+                <article >
+                    <figure>
+                        <img
+                        src="../assets/img-home/img-card-1.png" alt="Two people talking to each other"/>
+                    </figure>
+                    <div class="cards-content-preview">
+                        <h2> Unified Management and User Experience: </h2>
+                        <p>
+                            Combines gym administration and routine personalization 
+                            in one platform, centralizing all key functions.
+                        </p>
+                    </div>
+                </article>
+                <!-- Target 2 -->
+                <article >
+                    <figure>
+                        <img src="../assets/img-home/img-card-2.png" alt="Diets and weight"/>
+                    </figure>
+                    <div class="cards-content-preview">
+                        <h2> Automation and Real-Time Potential: </h2>
+                        <p>
+                            Automatically personalizes routines and diets, with future potential for integration with real-time monitoring devices.
+                        </p>
+                    </div>
+                </article>
+                <!-- Target 3 -->
+                <article >
+                    <figure>
+                        <img src="../assets/img-home/img-card-3.png" alt="Community members"/>>
+                    </figure>
+                    <div class="cards-content-preview">
+                        <h2> Community for Motivation personal: </h2>
+                        <p>
+                            Includes a forum where users can share achievements and support each other, fostering retention and engagement.
+                        </p>
+                    </div>
+                </article>
+                <!-- Target 4 -->
+                <article >
+                    <figure>
+                        <img src="../assets/img-home/img-card-4.png" alt="Gym decorate"/>
+                    </figure>
+                    <div class="cards-content-preview">
+                        <h2> Affordable and Simple for Small Gyms: </h2>
+                        <p>
+                            Provides essential tools without complexity or high costs, ideal for growing gyms.
+                        </p>
+                    </div>
+                </article>
+            </div>
+            </section>
+            
+            <!-- ** HTML for section promotional video -->
+            <section class="promotional-video">
+                <h1>Efficiency and Personalization at Your Fingertips</h1>
+                <!-- Promotional video -->
+                <!-- <video src="https://youtu.be/TlJbu0BMLaY?si=BNwZxkJLaF4XML2Q">
+                </video> -->
+                <iframe class="video-promo" src="https://www.youtube.com/embed/TlJbu0BMLaY?si=BNwZxkJLaF4XML2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <div class="cont-text-bttn-video">
+                    <!-- Paragraph video's -->
+                    <p>Time Fit: The all-in-one platform that simplifies gym management and personalizes your clients' experience. Automation, community, and flexibility at your fingertips. Discover how to transform your gym today</p>
+    
+                    <!-- Button for read more -->
+                    <router-link to="/About-us">
+                        <button name="read-more" class="bttn-red-more-2" type="button"> Read More </button>
+                    </router-link>
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- * Section information columns -->
+         <section class="info-column-content-main">
+
+            <!-- ** Sections info with your image -->
+             <div class="info-column-content">
+
+                <!-- Content text -->
+                <section class="section-text">
+                    <h2>Advanced Automation and Personalization</h2>
+                    <p> Time Fit automates the creation of personalized routines and diets, adapting to each user based on their level, goals, available time, and dietary preferences. In the future, the platform aims to integrate with fitness devices to offer real-time recommendations based on metrics like heart rate and calories burned.
+                    </p>
+                    <router-link> <!-- There is a conection to "Features" section of landing -->
+                        <button class="bttn-red-more-3"> Read more </button>
+                    </router-link>
+                </section>
+
+                <!-- Content image -->
+                <section class="section-img">
+                    <figure>
+                        <img src="../assets/img-home/info-column-img-1.png" alt="Salad dish">
+                    </figure>
+                </section>
+                
+             </div>
+
+             <div class="info-column-content">
+    
+                 <!-- Content text -->
+                 <section class="section-text">
+                    <h2>Simplified and Accessible Solution for Small Gyms</h2>
+                    <p> Time Fit is designed to be accessible and easy to use, especially for small or growing gyms. The platform offers only essential features, avoiding unnecessary complexity and high costs, allowing these gyms to adopt advanced technology without major investments.
+                    </p>
+                    <router-link> <!-- There is a conection to "Features" section of landing -->
+                        <button class="bttn-red-more-3"> Read more </button>
+                    </router-link>
+                </section>
+
+                <!-- Content image -->
+                <section class="section-img">
+                    <figure>
+                        <img src="../assets/img-home/info-column-img-1.png" alt="Salad dish">
+                    </figure>
+                </section>
+
+             </div>
+
+             <div class="info-column-content">
+    
+                 <!-- Content text -->
+                 <section class="section-text">
+                    <h2>Easy Membership and Payment Management</h2>
+                    <p> Time Fit offers automated membership renewal reminders and a streamlined payment system, making financial management easier for gyms and ensuring that customer memberships remain active.
+                    </p>
+                    <router-link> <!-- There is a conection to "Features" section of landing -->
+                        <button class="bttn-red-more-3"> Read more </button>
+                    </router-link>
+                </section>
+
+                <!-- Content image -->
+                <section class="section-img">
+                    <figure>
+                        <img src="../assets/img-home/info-column-img-1.png" alt="Salad dish">
+                    </figure>
+                </section>
+
+             </div>
+         </section>
+
+        <!-- * Section: What Our Member Say About Us? -->
+
+        <section class="member-say-content-main">
+            <!-- Text side -->
+            <div class="text-side-content">
+                <h2>What Our Member Say About Us?</h2>
+                <div class="icons-content">
+                    <div class="cirle-icon-back"></div>
+                    <div class="cirle-icon-back"></div>
+                    <div class="cirle-icon-back"></div>  
+                </div>
+                <p>50K+ Satisfied Customer</p>
+            </div>
+
+            <!-- Comment side -->
+            <div class="comment-say-content">
+                <!-- Start icons -->
+                <div class="icons-content-starts">
+                    <i class="fa-solid fa-star" style="color: #f8820b;"></i>
+                    <i class="fa-solid fa-star" style="color: #f8820b;"></i>
+                    <i class="fa-solid fa-star" style="color: #f8820b;"></i>
+                    <i class="fa-solid fa-star" style="color: #f8820b;"></i>
+                    <i class="fa-solid fa-star" style="color: #f8820b;"></i>
+                </div>
+                <p>“Since we implemented Time Fit in our gym, management has been much simpler and more efficient. The platform allows us to quickly and easily manage memberships, payments.”</p>
+
+                <!-- Info and icon person -->
+                <div>
+                    <div class="cirle-icon-back"></div>
+                    <p>Monkey boy</p>
+                    <p>student</p>
+                </div>
+
+                <!-- Circles of aside -->
+                <div class="cirle-icon-back"></div>
+                <div class="cirle-icon-back"></div>
+                <div class="cirle-icon-back"></div>
+
+            </div>
+        </section>
+
+    </main>
+</template>
+
+<script>
+
+</script>
+
+<style scoped>
+
+    * { /* Sizing reset */
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .home-main-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* Añade un espacio entre el content y el navbar  */
+        margin-top: 3em;
+    }
+    
+    /* Main: section hero section */
+    .hero-content {
+        width: 100%;
+        height: 50em;
+        contain: content;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* Style background by frist mobile*/
+
+    .img-backgrd { /* Styles for backgrd with a filter */
+        width: 100%;
+        /* height: 50em; */
+        height: 100%;
+        object-fit: cover;
+        object-position: 75% 10%;
+        position: absolute;
+        filter: brightness(30%);
+    }
+    
+    .img-subject { /* Subject  */
+        object-fit: cover;
+        width: 100%;
+        /* height: 50em; */
+        height: 100%;
+        object-fit: cover;
+        object-position: 75% 10%;
+        filter: brightness(.6);
+        z-index: 1; /* Se vuelve una capa encima del backgrd */
+        position: relative;
+    }
+    
+    /* Style text by hero content */
+
+    .text-bttn-hero{
+        width: auto;
+        height: 30em;
+        color: #fff;
+        position: absolute;
+        top: 6em;
+        bottom: 65%;
+        padding: 0em 0em 0em 1.2em ;
+        z-index: 2; /* El texto esta por encima del background*/
+        /* overflow: scroll; */
+    }
+
+    .txt-subtitl-top {
+        color: #EC9D0B ;
+        font-weight: 500;
+        padding-bottom: 1em;
+    }
+
+    .txt-titl-welcomn {
+        color: #D9D9D9;
+        font-size: 3em;
+    }
+
+    .txt-parghp-bottom {
+        padding-top: 2em;
+        padding-bottom: 3em;
+        width: 342px;
+        /* padding-right: 3px; */
+        /* transition: 3s; */
+    }
+
+    .bttn-exp-more {
+        background: linear-gradient(90deg, #FF4300 0%, #FF6400 100%);
+        padding: 10px 37px;
+        border-radius: 15px;
+        border-style: inherit;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        color: #fff;    
+    }
+
+    .arrow-boton {
+        transform: rotate(90deg);
+        margin-left: 0.625px;
+    }
+
+    /* Main: Section for "What we offer cards" and "Efficiency and Personalization at Your Fingertips" */
+
+    .cards_video_content {
+        background: linear-gradient(42deg, #272829 42.86%, #BB650F 100%);
+        width: 100%;
+        height: auto;
+
+    }
+    
+    /* Styles for section cards */
+    .cards-we-offer {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        /* padding: 20px 0px; */
+        flex-direction: column;
+        color: white;
+    }
+
+    /* Styles for cards title */
+    .title-cards {
+        display: flex;
+        justify-items: center;
+    }
+
+    .title-cards > h1 {
+        /* padding-top: 50px; */
+        text-align: center;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        font-size: 1.9rem;
+        color: #D9D9D9;
+        margin: 0 auto;
+        padding: 2em 0em 0.8em 0em;
+        text-transform: uppercase;
+        /* position: relative; */
+    }
+
+    /* Styles for card directly */
+
+    .cards-content {
+        display: flex;
+        flex-wrap: wrap;
+        /* margin: 0 auto; */
+        justify-content: center;
+        /* max-width: 1200px; */
+        width: 100%;
+        gap: 1.5em;
+    }
+
+    .cards-content article {
+        width: 18em;
+        height: 397px;
+        cursor: pointer;
+        display: block;
+        transition: all 0.4s ease-in-out;
+        overflow: hidden;
+        border-radius: 16px;
+    }
+
+    .cards-content article a {
+        display: inline-flex;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .cards-content article h2 {
+        margin: 0 0 18px 0;
+        font-size: 1em;
+        color: #ff6400;
+        transition: color 0.3s ease-out;
+    }
+    .cards-content article p {
+        margin: 0 0 18px 0;
+        font-size: 14px;
+        color:  #fff;
+        transition: color 0.3s ease-out;
+    }
+
+    .cards-content article img {
+        max-width: 100%;
+        transform-origin: center;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .cards-content-preview {
+        padding: 24px;
+        background: #45474B;
+    }
+
+    .cards-content figure {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .cards-content figure img {
+        height: 100%;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        object-fit: cover;
+    }   
+
+    .cards-content article:hover img {
+        transform: scale(1.5);
+    }
+
+    /* Styles for section promotional video */
+
+    .promotional-video {
+        display: flex;
+        justify-content: center;
+        /* align-items: start; */
+        /* padding: 5em 0em 2.5em 0em; */
+        padding: 5em 0em;
+        flex-direction: column;
+        color: white;
+        width: 100%;
+    }
+
+    .promotional-video h1 {
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2em;
+    }
+
+    /* Styles for video promo */
+    .video-promo {
+        width: 320px;
+        height: 220px;
+        position: relative;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin:  auto;
+    }
+
+    /* Flex syteles for content */
+    .cont-text-bttn-video {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .promotional-video p {
+        position: relative;
+        width: 100%;
+        padding: 0em 2em ;
+        font-size: 21px;
+        padding-bottom: 3em;
+    }
+
+    .bttn-red-more-2 {
+        background: linear-gradient(90deg, #FF4300 0%, #FF6400 100%);
+        padding: 10px 37px;
+        border-radius: 15px;
+        border-style: inherit;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    /*
+    Main: Section information columns 
+    */
+    
+    .info-column-content-main {
+        /* display: flex; */
+        width: 100%;
+        height: auto;
+        background: #272829;
+    }
+
+    /* Styles for section text */
+    .info-column-content {
+        display: flex;
+        justify-content: center;
+        padding: 0em 0em 3em;
+        /* padding: 2.5em 0em 3em; */
+        flex-direction: row;
+        color: white;
+        width: 100%;
+    }
+
+    .section-img img {
+        /* padding: 2px; */
+        display: none;
+    }
+
+    .section-text {
+        padding: 0em 1.25em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-text h2, .section-text p {
+        text-align: center;
+    }
+
+    .section-text h2 {
+        padding-bottom: 2em;
+    }
+
+    .section-text p {
+        position: relative;
+        width: 100%;
+        /* padding: 0em 2em ; */
+        font-size: 21px;
+        padding-bottom: 3em;
+    }
+
+    .bttn-red-more-3 {
+        background: linear-gradient(90deg, #FF4300 0%, #FF6400 100%);
+        padding: 10px 28px;
+        border-radius: 15px;
+        border-style: inherit;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+
+
+
+
+
+
+    /* ------ Media queries para el tamaño en desktop ------ */
+     /* .img-backgrd {
+        width: 100%;
+        height: 0;
+    } */
+    
+
+</style>
