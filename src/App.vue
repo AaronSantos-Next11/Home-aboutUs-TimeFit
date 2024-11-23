@@ -99,7 +99,7 @@
 .navigation {
   background-color: #983E00;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  padding: 0.7rem;
   position: fixed;
   top: 0;
   width: 100%;
