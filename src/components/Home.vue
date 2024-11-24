@@ -185,40 +185,64 @@
             <div class="text-side-content">
                 <h2>What Our Member Say About Us?</h2>
                 <div class="icons-content">
-                    <div class="cirle-icon-back"></div>
-                    <div class="cirle-icon-back"></div>
-                    <div class="cirle-icon-back"></div>  
+                    <img src="../assets/img-home/comnt-icon-a.svg" class="circle-icon-backgrd icon-a">
+                    <img src="../assets/img-home/comnt-icon-b.svg" class="circle-icon-backgrd icon-b">
+                    <img src="../assets/img-home/comnt-icon-c.svg" class="circle-icon-backgrd icon-c">  
                 </div>
                 <p>50K+ Satisfied Customer</p>
             </div>
 
             <!-- Comment side -->
-            <div class="comment-say-content">
-                <!-- Start icons -->
-                <div class="icons-content-starts">
-                    <i class="fa-solid fa-star" style="color: #f8820b;"></i>
-                    <i class="fa-solid fa-star" style="color: #f8820b;"></i>
-                    <i class="fa-solid fa-star" style="color: #f8820b;"></i>
-                    <i class="fa-solid fa-star" style="color: #f8820b;"></i>
-                    <i class="fa-solid fa-star" style="color: #f8820b;"></i>
+            <div class="comment-say-content-main">
+
+                <div class="comment-say-content">
+                    <!-- Start icons -->
+                    <div class="icons-content-stars">
+                        <i class="fa-solid fa-star" style="color: #f8820b;"></i>
+                        <i class="fa-solid fa-star" style="color: #f8820b;"></i>
+                        <i class="fa-solid fa-star" style="color: #f8820b;"></i>
+                        <i class="fa-solid fa-star" style="color: #f8820b;"></i>
+                        <i class="fa-solid fa-star" style="color: #f8820b;"></i>
+                    </div>
+                    <q>
+                        Since we implemented Time Fit in our gym, management has been much simpler and more efficient. The platform allows us to quickly and easily manage memberships, payments.
+                    </q>
+    
+                    <!-- Info and icon person -->
+                    <div class="info-icon-content">
+                        <img src="../assets/img-home/comnt-icon-d.svg" class="circle-icon-backgrd icon-d">
+                        <div class="info-content">
+                            <p class="info-username">Monkey boy</p>
+                            <p class="info-rol">student</p>
+                        </div>
+                    </div>
+    
+                    <!-- Circles of aside -->
+                    <div class="circle-aside-a"></div>
+                    <div class="circle-aside-b"></div>
+                    <div class="circle-aside-c"></div>
                 </div>
-                <p>“Since we implemented Time Fit in our gym, management has been much simpler and more efficient. The platform allows us to quickly and easily manage memberships, payments.”</p>
 
-                <!-- Info and icon person -->
-                <div>
-                    <div class="cirle-icon-back"></div>
-                    <p>Monkey boy</p>
-                    <p>student</p>
-                </div>
-
-                <!-- Circles of aside -->
-                <div class="cirle-icon-back"></div>
-                <div class="cirle-icon-back"></div>
-                <div class="cirle-icon-back"></div>
-
+                
             </div>
         </section>
 
+        <!-- * Section: Transform your gym experience with innovative  -->
+        <section class="backgrd-final-content-main">
+            <img src="../assets/img-home/background-fit.svg" alt="">
+
+            <div class="text-bttn-final-content">
+                <h2>Transform your gym experience with innovative</h2>
+                <p>Join Time Fit and take your training to the next level.</p>
+    
+                <!-- There is a conection to "Log in" section of landing -->
+                <router-link>
+                    <button class="bttn-red-more-3">Join now</button>
+                </router-link>
+            </div>
+
+        </section>
+        
     </main>
 </template>
 
@@ -240,6 +264,7 @@
         width: 100%;
         /* Añade un espacio entre el content y el navbar  */
         margin-top: 3em;
+        background-color: #272829;
     }
     
     /* Main: section hero section */
@@ -354,7 +379,7 @@
         text-align: center;
         justify-content: center;
         /* flex-wrap: wrap; */
-        font-size: 1.9rem;
+        font-size: 1.8rem;
         color: #D9D9D9;
         margin: 0 auto;
         padding: 2em 0em 0.8em 0em;
@@ -448,7 +473,8 @@
         justify-content: center;
         text-align: center;
         text-transform: uppercase;
-        font-size: 2em;
+        font-size: 1.6em;
+        padding: 0em 1em;
     }
 
     /* Styles for video promo */
@@ -526,6 +552,7 @@
 
     .section-text h2 {
         padding-bottom: 2em;
+        font-size: 1.8em;
     }
 
     .section-text p {
@@ -547,11 +574,154 @@
         color: #fff;
     }
 
+    /* Main: Section - What Our Member Say About Us? */
 
+    .member-say-content-main {
+        width: 100%;
+        height: auto;
+        background: #272829;
+    }
 
+    .text-side-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
+    .text-side-content h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 1.8em;
+        padding-bottom: 1em;
+    }
+    .text-side-content p {
+        color: #F8820B;
+    }
 
+    .icons-content {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 1em;
+    }
 
+    .circle-icon-backgrd {
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+
+    .icon-a,.icon-b, .icon-c {
+        position: relative;
+    }
+
+    .icon-a {
+        width: 2em;
+        height: 2em;
+    }
+
+    .icon-b {
+        left: -6%;
+        z-index: 2;
+    }
+
+    .icon-c{
+        left: -12%;
+        z-index: 3;
+    }
+
+    .comment-say-content-main {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .comment-say-content {
+        margin: 2em;
+        margin-bottom: 4em;
+        background-color: #45474B;
+        border-radius: 20px;
+        padding: 1.5em;
+        max-width: 45em;
+    }
+
+    .icons-content-stars {
+        display: flex;
+        justify-content: end; 
+    }
+
+    .comment-say-content q {
+        padding-top: 1em;
+        color: rgba(255, 255, 255, 0.80);
+        display: block;
+        font-weight: 500;
+    }
+
+    .info-icon-content {
+        display: flex;
+        flex-direction: row;
+        padding-top: 1em;
+    }
+
+    .info-content > p {
+        font-size: 12px;
+        color: #fff;
+        padding-left: 1em;
+    }
+
+    .info-content > .info-rol {
+        color: #F8820B;
+    }
+
+    /* Main: Section - Transform your gym experience with innovative  --> */
+
+    .backgrd-final-content-main {
+        margin-bottom: 4em;
+        background-color: #272829;
+        width: 100%;
+        height: 24em;
+        contain: content;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .backgrd-final-content-main img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 47% 10%;
+        position: absolute;
+        /* margin-bottom: 1em; */
+        filter: brightness(70%);
+    }
+
+    .text-bttn-final-content {
+        position: relative;
+        text-align: center;
+        color: #fff;
+        padding: 0em 2em ;
+        /* background-color: #45474B; */
+        margin: 6.1em 0em;
+        color: #D9D9D9;
+
+    }
+
+    .text-bttn-final-content h2 {
+        padding-bottom: 1.3em;
+        font-size: 1.2em;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+
+    .text-bttn-final-content p {
+        text-transform: uppercase;
+        font-size: 1em;
+        padding-bottom: 1.3em;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+    }
 
     /* ------ Media queries para el tamaño en desktop ------ */
      /* .img-backgrd {
