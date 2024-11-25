@@ -309,7 +309,7 @@
         position: absolute;
         top: 6em;
         bottom: 65%;
-        padding: 0em 0em 0em 1.2em ;
+        padding-left: 1.2em;        
         z-index: 2; /* El texto esta por encima del background*/
         /* overflow: scroll; */
     }
@@ -723,11 +723,124 @@
         letter-spacing: 0.5px;
     }
 
-    /* ------ Media queries para el tamaño en desktop ------ */
-     /* .img-backgrd {
-        width: 100%;
-        height: 0;
-    } */
+    /* ------ Media queries by size of tablets ------ */
+
+     /* It is a min-width: 768px in legacy sintax */
+    @media(width >= 712px) {
+
+        /* ----- Main: section hero section */
+        
+        .hero-content {
+            width: 100%;
+            height: 61em;
+        }
+
+        .img-backgrd { 
+        /* Styles for backgrd with a filter */
+            object-position: 63% 10%;
+            filter: brightness(23%);
+        }
     
+        .img-subject { 
+        /* Subject  */
+            object-position: 63% 10%;
+            filter: brightness(71%);
+            z-index: 1; /* Se vuelve una capa encima del backgrd */
+            position: relative;
+        }
+
+        /* ** Style text by hero content ** */
+
+        .text-bttn-hero{
+            position: absolute;
+            top: 9.7em;
+            bottom: 65%;
+            height: 50em;
+            
+        }
+        
+        .txt-subtitl-top {
+            font-size: 1.4em;
+            font-weight: 500;
+            max-width: 12em;
+        }
+
+        .txt-titl-welcomn {
+            color: #D9D9D9;
+            font-size: 4em;
+            padding-right: 7em;
+        }
+
+        .txt-parghp-bottom {
+            padding-top: 2em;
+            padding-bottom: 3em;
+            width: 342px;
+            padding-right: 3em;
+            font-size: 17px;
+        }
+
+        .bttn-exp-more {
+            padding: 14px 33px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        /* ----- Main: Section for "What we offer cards" 
+        and "Efficiency and Personalization at 
+        Your Fingertips" */
+
+        .video-promo {
+            width: 40em;
+            /* height: 420px; */
+            height: 26em;
+            position: relative;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            margin:  auto;
+        }
+
+        /*
+        ----- Main: Section information columns 
+        */
+
+        .section-text {
+            /* padding: 0em 1.25em; */
+            padding: 0em 2.3em;
+        }
+
+        .section-text h2 {
+            padding-bottom: .8em;
+        }
+
+        /* 
+        ----- Main: Section - Transform your gym experience with
+        innovative */
+
+        .text-bttn-final-content {
+            padding: 0em 2em;
+            margin: 4.3em 0em;
+        }
+
+        .text-bttn-final-content h2 {
+            font-size: 1.9em;
+            letter-spacing: 1.3px;
+        }
+
+        .text-bttn-final-content p {
+            text-transform: uppercase;
+            font-size: 1.4em;
+            padding-bottom: 2em;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+    }
+
+
+    /* ------ Media queries by size of desktop and laptops ------ */
+
+    @media(width >= 1011) {
+
+    }
 
 </style>
